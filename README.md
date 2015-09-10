@@ -3,12 +3,6 @@ Send push notification to Apple Devices (iPhone, iPad)
 
 具体的实现文档可以参考我放在了博客上：[socket的ios 推送的类库的实现] (http://www.fzb.me/2015-9-7-socket-library-for-apns.html)
 
-### License
-
-© 冯宗宝 fzb.me
-
-Released under the The MIT License
-
 ### Useage
 
 ```php
@@ -33,7 +27,7 @@ $message = new \AppleNotificationPush\Message\Message();
 //        $message->setDeviceToken('ss')->setSound('s')->setAlert('alert');
 //        var_dump($message->getPayloadData());
 
-        $certificate = BASEPATH . "../shared/config/development/ck.pem";
+        $certificate = "path/to/cetificate.pem";
         $connection = new Connection(1, $certificate, C('jpush.apns.password'));
         $notification = new Notification($connection);
         $notification->sendMessage($message);     
@@ -47,8 +41,8 @@ $message = new \AppleNotificationPush\Message\Message();
 
     public function feedback()
     {
-        $certificate = BASEPATH . "../shared/config/development/ck.pem";
-        $connection = new \AppleNotificationPush\Feedback\Connection(1, $certificate, C('jpush.apns.password'));
+        $certificate = "path/to/cetificate.pem";
+        $connection = new \AppleNotificationPush\Feedback\Connection(1, $certificate, $password);
 
 
 //        var_dump($connection);
@@ -77,3 +71,9 @@ $this->log('info', sprintf(
 ```
 
 ![logger](http://7tsys1.com1.z0.glb.clouddn.com/屏幕快照%202015-09-10%20下午1.22.08.png)
+
+### License
+
+© 冯宗宝 fzb.me
+
+Released under the The MIT License
