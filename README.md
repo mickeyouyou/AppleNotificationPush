@@ -1,7 +1,7 @@
 ## AppleNotificationPush
 Send push notification to Apple Devices (iPhone, iPad) 
 
-
+具体的实现文档可以参考我放在了博客上：![socket的ios 推送的类库的实现](http://www.fzb.me/2015-9-7-socket-library-for-apns.html)
 
 
 ### Useage
@@ -70,3 +70,5 @@ $this->log('info', sprintf(
             count($feedback)
         ));
 ```
+
+![logger](http://7tsys1.com1.z0.glb.clouddn.com/屏幕快照%202015-09-10%20下午1.22.08.png)
