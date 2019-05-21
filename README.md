@@ -1,5 +1,6 @@
 ## AppleNotificationPush
-Send push notification to Apple Devices (iPhone, iPad)
+
+A middleware that help you push notification from server to Apple Devices (iPhone, iPad)
 
 ### Useage
 
